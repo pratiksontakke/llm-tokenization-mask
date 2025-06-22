@@ -1,0 +1,10 @@
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+
+Traceback (most recent call last):
+--- BPE (GPT-2) ---
+  File "C:\misogiai\llm-tokenization-mask\tokenise.py", line 45, in <module>
+    print("Tokens:", result['tokens'])
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0120' in position 9: character maps to <undefined>
+Tokens: 

@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Q: 1
+Tokenisation & "Fill-in-the-Blank"
+Tip: When you get stuck, ask ChatGPT why something fails or how to fix it.
+
+Learning-while-building is the goal, It's not necessary that you finish everything.
+
+🔧 Setup
+Install the necessary libraries:
+
+pip install tokenizers transformers sentencepiece
+
+🔤 Tokenise the Sentence
+Tokenise the following sentence using BPE, WordPiece, and SentencePiece (Unigram):
+
+The cat sat on the mat because it was tired.
+
+📋 Report:
+For each tokenisation algorithm:
+
+Provide the token list and corresponding token IDs.
+Report the total token count.
+Add a brief note (≤ 150 words) on why the splits differ across the algorithms.
+🧠 Mask & Predict
+Replace any two tokens with the model's mask token.
+Load a 7B open-source language model (e.g. mistralai/Mistral-7B-Instruct) using the transformers library.
+Use the fill-mask pipeline to predict the masked tokens.
+Display the top-3 predictions per blank and add a short comment on their plausibility.
+
+
+Deliverables should follow this directory structure:
+/
+├── tokenise.py         # Script for tokenization (likely BPE, WordPiece, SentencePiece)
+├── predictions.json    # Output of your tokenization or model predictions
+├── compare.md          # Markdown file comparing methods or outputs
+└── README.md           # Instructions or explanation for running and understanding the project
+
+
+
+
